@@ -1,0 +1,72 @@
+{
+  "name": "slim/slim",
+  "type": "library",
+  "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+  "keywords": [
+    "framework",
+    "micro",
+    "api",
+    "router"
+  ],
+  "homepage": "https://slimframework.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Lockhart",
+      "email": "hello@joshlockhart.com",
+      "homepage": "https://joshlockhart.com"
+    },
+    {
+      "name": "Andrew Smith",
+      "email": "a.smith@silentworks.co.uk",
+      "homepage": "http://silentworks.co.uk"
+    },
+    {
+      "name": "Rob Allen",
+      "email": "rob@akrabat.com",
+      "homepage": "http://akrabat.com"
+    },
+    {
+      "name": "Gabriel Manricks",
+      "email": "gmanricks@me.com",
+      "homepage": "http://gabrielmanricks.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "pimple/pimple": "^3.0",
+    "psr/http-message": "^1.0",
+    "nikic/fast-route": "^1.0",
+    "container-interop/container-interop": "^1.2",
+    "psr/container": "^1.0",
+    "monolog/monolog": "^1.23",
+    "firebase/php-jwt": "^5.0",
+    "tuupola/slim-jwt-auth": "^3.0",
+    "google/apiclient": "2.2.2",
+    "ext-json": "^1.6",
+    "ext-PDO": "^7.2",
+    "ramsey/uuid": "^3.8"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5",
+    "phpunit/phpunit": "7"
+  },
+  "provide": {
+    "psr/http-message-implementation": "1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slim\\": "Slim",
+      "Recipes\\": "src/",
+      "Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "@phpunit",
+      "@phpcs"
+    ],
+    "phpunit": "php vendor/bin/phpunit",
+    "phpcs": "php vendor/bin/phpcs"
+  }
+}

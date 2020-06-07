@@ -1,1 +1,6 @@
-/.idea/
+.idea/
+vendor/
+test/db/backup/
+test/db/data/
+src/config/*.json
+2_data.sql

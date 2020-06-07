@@ -28,4 +28,11 @@ See also the list of [contributors](https://github.com/y-garcia/tomate-timer/con
 
 ## License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See the [LICENSE.md](LICENSE.md) file for details.
+
+### External Licenses
+
+This software uses the following external libraries:
+
+* [Slim framework](http://www.slimframework.com/): Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See [LICENSE-Slim.md](LICENSE-Slim.md) for details.
+

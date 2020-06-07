@@ -1,0 +1,24 @@
+DROP DATABASE IF EXISTS recipes_dev;
+DROP DATABASE IF EXISTS recipes_test;
+
+# DROP TABLE IF EXISTS ab_recipe_user;
+# DROP TABLE IF EXISTS ab_recipe_step;
+# DROP TABLE IF EXISTS ab_recipe_tag;
+# DROP TABLE IF EXISTS ab_recipe_ingredient;
+#
+# DROP TABLE IF EXISTS ab_recipe;
+# DROP TABLE IF EXISTS ab_placement;
+# DROP TABLE IF EXISTS ab_ingredient;
+# DROP TABLE IF EXISTS ab_oauth;
+# DROP TABLE IF EXISTS ab_deleted;
+#
+# DROP TABLE IF EXISTS ab_store;
+# DROP TABLE IF EXISTS ab_tag;
+# DROP TABLE IF EXISTS ab_unit;
+# DROP TABLE IF EXISTS ab_aisle;
+# DROP TABLE IF EXISTS ab_user;
+# DROP TABLE IF EXISTS ab_deleted_table;
+# DROP TABLE IF EXISTS ab_sync;
+#
+# DROP FUNCTION IF EXISTS BIN_TO_UUID;
+# DROP FUNCTION IF EXISTS UUID_TO_BIN;
