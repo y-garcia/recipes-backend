@@ -747,9 +747,11 @@ class RecipeService
 
     private function insertRecipeTags($recipeId, $tagIds)
     {
-        foreach ($tagIds as $tagId) {
-            if (!$this->insertRecipeTag($recipeId, $tagId)) {
-                return false;
+        if(is_array($tagIds)){
+            foreach ($tagIds as $tagId) {
+                if (!$this->insertRecipeTag($recipeId, $tagId)) {
+                    return false;
+                }
             }
         }
 

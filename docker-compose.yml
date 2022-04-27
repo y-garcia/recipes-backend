@@ -18,15 +18,15 @@ services:
   recipes-backend:
     build: .
     container_name: recipes-php
-    working_dir: /var/www
-    command: php -S 0.0.0.0:8080
+    working_dir: /var/www/recipes-dev
+    command: sh -c "composer install && php -S 0.0.0.0:8080 -t /var/www"
     environment:
       - DB_SERVER=recipes-db
     ports:
       - 80:8080
     volumes:
-      - .:/var/www
-      - recipes-logs:/var/www/src/logs
+      - .:/var/www/recipes-dev
+      - recipes-logs:/var/www/recipes-dev/src/logs
     links:
       - recipes-db
 
